@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+starbucks = Shop.create({ name: "Starbucks", phone_number: 5557779999 })
+
+americano = Coffee.create({ name: "Americano", price: 100.72, shop: starbucks })
+medium_roast = Coffee.create({ name: "Medium Roast", price: 3.50, shop: starbucks })
